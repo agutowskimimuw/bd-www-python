@@ -1,4 +1,4 @@
-Przed wszystkim warto się upewnić, że mamy zainstalowanego Pythona i venv:
+Przed wszystkim upewnijmy się, że mamy zainstalowanego Pythona i venv:
 ```
 sudo apt install python3 python3-venv
 ```

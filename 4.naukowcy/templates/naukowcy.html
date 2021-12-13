@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>Genealogia matematyczna - Naukowcy</title>
+    </head>
+    <body>
+        <h2>Naukowcy</h2>
+        {% for naukowiec in naukowcy %}
+            <br>
+            <a href='/doktoranci/{{ naukowiec.id }}'>{{ naukowiec.imie }} {{ naukowiec.nazwisko }}</a>
+            <br>
+        {% endfor %}
+    </body>
+</html>

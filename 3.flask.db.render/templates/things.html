@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Rzeczy</title>
+    </head>
+    <body>
+        <h3>Rzeczy</h3>
+        <table border=1>
+            <tr>
+                <th>ID</th>
+                <th>nazwa</th>
+                <th>data</th>
+            </tr>
+            {% for thing in things %}
+                <tr>
+                    <td>{{ thing.id }}</td>
+                    <td>{{ thing.name }}</td>
+                    <td>{{ thing.date }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
