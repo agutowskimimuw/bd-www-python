@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Rzeczy</title>
+    </head>
+    <body>
+        <h3>Rzeczy</h3>
+        <table border=1>
+            <tr>
+                <th>ID</th>
+                <th>nazwa</th>
+            </tr>
+            {% for thing in things %}
+                <tr>
+                    <td>{{ thing.id }}</td>
+                    <td>{{ thing.name }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+        Dodaj rzecz:
+        <form action='/add_thing'>
+            Id: <input type='text' name='id'><br>
+            Nazwa: <input type='text' name='name'><br>
+            <button>Dodaj</button>
+        </form>
+    </body>
+</html>
