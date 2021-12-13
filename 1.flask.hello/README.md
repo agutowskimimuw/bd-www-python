@@ -7,3 +7,5 @@ flask run
 ```
 
 Teraz wchodzimy w przeglądarce na stronę http://localhost:5000.
+
+Żeby zakończyć działanie aplikacji, klikamy Ctrl+C (w terminalu).

@@ -8,7 +8,7 @@ W przeciwnym przypadku instalujemy Postgresa.
 sudo apt install postgresql
 ```
 
-Stwórzmy użytkownika o nazwie takiej, jak nasz użytkownik w systemie, odpowiadającą bazę, i sprawdzamy, czy psql działa:
+Tworzymy użytkownika o nazwie takiej, jak nasz użytkownik w systemie, odpowiadającą bazę, i sprawdzamy, czy psql działa:
 ```console
 albert@DESKTOP-RDAL0L1:~$ sudo -u postgres createuser --interactive
 Enter name of role to add: albert
@@ -23,7 +23,7 @@ albert@DESKTOP-RDAL0L1:~$
 ```
 
 Teraz stwórzmy osobnego użytkownika i bazę danych na potrzeby naszej aplikacji.
-```
+```console
 albert@DESKTOP-RDAL0L1:~$ psql
 psql (12.9 (Ubuntu 12.9-0ubuntu0.20.04.1))
 Type "help" for help.
@@ -42,13 +42,13 @@ Musimy jeszcze zmienić jeden plik konfiguracyjny (można użyć swojego ulubion
 ```
 sudo vim /etc/postgresql/12/main/pg_hba.conf
 ```
-Znajdujemy linijkę (blisko końca pliku):
+Znajdujemy linijkę:
 ```
-local   all             all                                     peer
+local   all             postgres                                peer
 ```
-I zamieniamy "peer" na "md5":
+I dopisujemy pod nią:
 ```
-local   all             all                                     md5
+local   all             flaskapp                                md5
 ```
 Restartujemy postgresa:
 ```
