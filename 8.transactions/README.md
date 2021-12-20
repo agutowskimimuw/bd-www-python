@@ -13,4 +13,4 @@ python3 1.py
 
 `transactions.py` dostarcza parę funkcji do prostego testowania transakcji (na tabeli z tylko jedną kolumną).
 W przykładzie `4.py` można zobaczyć uruchamianie transakcji równolegle.
-W przykładzie `5.py` powinien zostać rzucony wyjątek (`SerializationFailure`).
+W przykładzie `5.py` powinien zostać rzucony wyjątek `SerializationFailure`, a w `7.py` wyjątek `DeadlockDetected`.
