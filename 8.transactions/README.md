@@ -4,6 +4,8 @@ Upewniamy się, że jesteśmy w naszym wirtualnym środowisku (po lewej stronie 
 sudo service postgresql start
 ```
 
+Na studentsie trzeba zmodyfikować plik `transactions.py` - odkomentować linijkę w funkcji `connect` i uzupełnić login i hasło.
+
 Czytamy kod źródłowy przykładów i je uruchamiamy:
 ```
 python3 1.py

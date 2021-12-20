@@ -43,6 +43,8 @@ class Transaction:
         self.con.close()
 
 def connect():
+    # Łączenie z Postgresem na studentsie.
+    # return psycopg2.connect(host="lkdb", dbname="bd", user="[login na studentsie]", password="[hasło ustawione w psql]")
     return psycopg2.connect(dbname="flaskapp", user="flaskapp", password="Lt9wtCJbVyBFwGmz8Nxn")
 
 def prepare_db(unique_values=False):
