@@ -15,3 +15,9 @@ W terminalu po lewej stronie powinniśmy widzieć napis (env), oznaczający, że
 Żeby z niego wyjść, wystarczy napisać `deactivate` (albo zamknąć okno terminala).
 
 Wchodzimy do katalogu jednego z projektów (np. `cd 1.flask.hello`). W folderze projektu są instrukcje, jak go uruchomić.
+
+
+Na studentsie można się połączyć z Postgresem w taki sposób:
+```
+con = psycopg2.connect(host="lkdb", dbname="bd", user="[login na studentsie]", password="[hasło ustawione w psql]")
+```
